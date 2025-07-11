@@ -1,0 +1,134 @@
+
+@font-face {
+    font-family: 'SpaceMono-Regular';
+    src: url('../assets/fonts/SpaceMono-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Anton';
+    src: url('../assets/fonts/Anton-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --third-family: "SpaceMono-Regular";
+    --font3: "Anton";
+    --text-size--medium: 1.5625rem;
+    --border-color--border-primary: #1d1d1b;
+    --text-size--tiny: .875rem;
+    --text-size--regular: 1.125rem;
+    --text-color--text-primary: #202020;
+    --text-color--text-secondary: white;
+    --text-size--small: 1rem;
+    --alternate-color--arrow-bg: #fbed81;
+    --heading: var(--font3);
+
+}
+
+body {
+    font-family: var(--heading), sans-serif;
+    color: var(--text-color--text-primary);
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #fff;
+}
+.h1 {
+    font-size: 7.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin: .67em 0;
+}
+.h2 {
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #000;
+}
+.h3 {
+    font-weight: 400;
+    font-size: 2.1875rem;
+}
+.h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.shop-details-heading {
+    font-size: var(--text-size--medium);
+    line-height: 1.2;
+}
+.text-regular {
+    font-family: var(--third-family), sans-serif;
+    color: var(--text-color--text-primary);
+    font-size: var(--text-size--regular);
+}
+.text-size-large {
+    text-transform: uppercase;
+    font-size: 4.3rem;
+}
+.text-size-small {
+    font-family: var(--third-family), sans-serif;
+    font-size: var(--text-size--small);
+}
+.view-more-text {
+    font-size: var(--text-size--small);
+}
+.large-picture_text {
+    color: var(--text-color--text-secondary);
+    text-transform: uppercase;
+    font-size: 6.25rem;
+}
+.testimonial_main-text {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+}
+.shop_detail-heading {
+    text-transform: uppercase;
+    white-space: nowrap;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2.7rem;
+    font-weight: 400;
+    line-height: 1.2;
+    position: absolute;
+    inset: auto 0 1rem;
+    transform: rotate(-90deg);
+}
+.main-button {
+    padding-top: var(--c-padding--small);
+    padding-bottom: var(--c-padding--small);
+    background-color: var(--text-color--text-primary);
+    cursor: pointer;
+    background-image: url("../assets/img/main-button.svg");
+    background-position: 50%;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    width: 9rem;
+    display: flex;
+}
+.button-text {
+    color: var(--text-color--text-secondary);
+    font-size: var(--text-size--small);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.card_name {
+    font-family: var(--heading), sans-serif;
+    font-size: var(--text-size--medium);
+}
+.card_price {
+    font-family: var(--third-family), sans-serif;
+}
+.footer_heading {
+    margin-bottom: .5rem;
+    font-size: 1.875rem;
+    font-weight: 400;
+}

@@ -113,12 +113,13 @@ svg {
     height: auto;
     width: auto;
 }
-img,
 video {
     height: auto;
     width: 100%;
 }
-img {
+img:not(.svg) {
+    height: auto;
+    width: 100%;
     object-fit: cover;
     border-style: none;
 }

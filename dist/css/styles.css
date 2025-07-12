@@ -2,3 +2,22 @@
 @import "component.css";
 @import "effects.css";
 @import "globals.css";
+
+@media screen and (max-width: 767px) {
+
+    .brand {
+        width: 9rem;
+    }
+    .cart-open-button {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .cart-icon {
+        display: none;
+    }
+}
+@media screen and (max-width: 424px) {
+    :root {
+        --text-size--regular: 1rem;
+    }
+}

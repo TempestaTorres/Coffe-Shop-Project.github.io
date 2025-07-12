@@ -1,3 +1,4 @@
+@import "dialog.css";
 
 @font-face {
     font-family: 'SpaceMono-Regular';
@@ -16,10 +17,8 @@
     --third-family: "SpaceMono-Regular";
     --font3: "Anton";
     --text-size--medium: 1.5625rem;
-    --border-color--border-primary: #1d1d1b;
     --text-size--tiny: .875rem;
     --text-size--regular: 1.125rem;
-    --text-color--text-primary: #202020;
     --text-color--text-secondary: white;
     --text-size--small: 1rem;
     --alternate-color--arrow-bg: #fbed81;
@@ -29,10 +28,13 @@
 
 body {
     font-family: var(--heading), sans-serif;
-    color: var(--text-color--text-primary);
+    color: var(--c-text-color--text-primary);
     font-size: 1rem;
     line-height: 1.5;
     background-color: #fff;
+}
+a {
+    color: var(--c-text-color--text-primary);
 }
 .h1 {
     font-size: 7.5rem;
@@ -57,18 +59,27 @@ body {
     font-weight: 400;
     line-height: 1.5;
 }
+.h4-regular {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
 .shop-details-heading {
     font-size: var(--text-size--medium);
     line-height: 1.2;
 }
 .text-regular {
     font-family: var(--third-family), sans-serif;
-    color: var(--text-color--text-primary);
+    color: var(--c-text-color--text-primary);
     font-size: var(--text-size--regular);
 }
 .text-size-large {
     text-transform: uppercase;
     font-size: 4.3rem;
+}
+.text-size-medium {
+    font-family: var(--third-family), sans-serif;
+    font-size: var(--text-size--medium);
 }
 .text-size-small {
     font-family: var(--third-family), sans-serif;
@@ -103,7 +114,7 @@ body {
 .main-button {
     padding-top: var(--c-padding--small);
     padding-bottom: var(--c-padding--small);
-    background-color: var(--text-color--text-primary);
+    background-color: var(--c-text-color--text-primary);
     cursor: pointer;
     background-image: url("../assets/img/main-button.svg");
     background-position: 50%;
@@ -120,15 +131,47 @@ body {
     text-transform: uppercase;
     line-height: 1;
 }
-.card_name {
+.card-name {
     font-family: var(--heading), sans-serif;
     font-size: var(--text-size--medium);
 }
-.card_price {
+.card-price {
     font-family: var(--third-family), sans-serif;
 }
 .footer_heading {
     margin-bottom: .5rem;
     font-size: 1.875rem;
     font-weight: 400;
+}
+.underline {
+    width: 3rem;
+    position: absolute;
+}
+.brand {
+    width: 11rem;
+}
+.cart-open-button {
+    background-color: #3898ec00;
+    padding: 9px 15px;
+}
+.cart-icon {
+    margin-right: 8px;
+}
+.cart-items-count {
+    display: inline-block;
+    line-height: 1.125rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 9px;
+    min-width: 1.125rem;
+    height: 1.125rem;
+}
+.button-link {
+    gap: .5rem;
+    border: 1px solid var(--c-border-color--border-primary);
+    background-color: var(--base-color--secondary);
+    padding: .3rem .5rem;
+}
+.button-link:hover {
+    background-color: #fae7c2;
 }

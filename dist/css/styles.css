@@ -3,6 +3,37 @@
 @import "effects.css";
 @import "globals.css";
 
+.hero-grid {
+    border-right: 2px solid var(--c-border-color--border-primary);
+    border-left: 2px solid var(--c-border-color--border-primary);
+    grid-template-rows: 100%;
+}
+.hero-img {
+    object-position: 50% 0;
+}
+.hero-text {
+    padding: var(--c-padding--medium)var(--c-padding--xlarge)var(--c-padding--medium)var(--c-section-padding--medium);
+    background-image: url("../assets/img/hero-bg.webp");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+}
+.hero-text-wrapper {
+    width: 23rem;
+}
+.hero-circle-img {
+    width: 8.5rem;
+    position: absolute;
+    inset: -26% -5% auto auto;
+}
+.hero-with-love-img {
+    width: 28rem;
+    max-width: none;
+    position: absolute;
+    top: auto;
+    bottom: -19%;
+    left: 20%;
+}
 @media screen and (max-width: 767px) {
 
     .brand {

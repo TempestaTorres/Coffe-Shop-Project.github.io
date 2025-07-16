@@ -2,6 +2,8 @@
     --base-color--alternate: #f8f8f8;
     --base-color--secondary: #fdf1d9;
     --base-color--secondary-2: #c5d6d1;
+    --base-color--secondary-3: #a5bdb6;
+    --base-color--secondary-4: #fae7c2;
     --base-color-neutral--white: #fff;
     --base-color-system--success-green: #cef5ca;
     --base-color-system--success-green-dark: #114e0b;
@@ -64,7 +66,7 @@ ul, ol {
 a {
     background-color: transparent;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
     text-decoration: none;
     color: inherit;

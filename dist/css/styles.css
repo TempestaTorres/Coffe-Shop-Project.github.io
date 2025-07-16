@@ -2,6 +2,7 @@
 @import "component.css";
 @import "effects.css";
 @import "globals.css";
+@import "dialog.css";
 
 .hero-grid {
     border-right: 2px solid var(--c-border-color--border-primary);
@@ -33,6 +34,17 @@
     top: auto;
     bottom: -19%;
     left: 20%;
+}
+.large-image-wrapper {
+    width: 63rem;
+}
+img.large-image {
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0%;
 }
 @media screen and (max-width: 767px) {
 

@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Early Birds</title>
-    <link rel="stylesheet" href="./dist/css/lenis.css">
     <link rel="stylesheet" href="./dist/css/styles.css">
+    <link rel="stylesheet" href="./dist/css/lenis.css">
+    <script src="./dist/scripts/localstorage.js"></script>
     <script src="./dist/scripts/lenis.min.js"></script>
     <script src="./dist/scripts/lenisinit.js"></script>
     <script src="./dist/scripts/dialog.js"></script>
+    <script src="./dist/scripts/products.js"></script>
     <script src="./dist/scripts/component.js"></script>
     <script src="./dist/scripts/app.js"></script>
 </head>
@@ -60,7 +62,7 @@
                         <div class="text-regular inline-block">)</div>
                     </a>
                     <!--Cart Dialog-->
-                    <div class="cart-dialog-wrapper" data-node-type="commerce-cart-container-wrapper">
+                    <div id="modal" class="cart-dialog-wrapper" data-node-type="commerce-cart-container-wrapper">
                         <div class="dialog-container" role="dialog" data-node-type="commerce-cart-container">
                             <div class="dialog-header">
                                 <h4 class="h4-regular letter-spacing-none">Cart</h4>
@@ -70,11 +72,22 @@
                                 </a>
                             </div>
                             <div class="card-body flex-1">
-                                <form class="flex flex-col relative" data-node-type="cart-form-empty">
+                                <form class="product-form flex flex-col relative" data-node-type="cart-form-empty">
+                                    <div class="cart-item-list"></div>
+                                    <div class="cart-footer">
+                                        <div class="subtotal flex space-between items-baseline mb-16">
+                                            <div class="text-size-small">Subtotal</div>
+                                            <div class="text-size-small subtotal-count"></div>
+                                        </div>
+                                        <div>
+                                            <a class="checkout-button" href="#" data-loading-text="Loading..." data-node-type="cart-checkout-button">Continue to Checkout</a>
+                                        </div>
+                                    </div>
                                 </form>
                                 <div class="cart-state-empty flex-row-container flex-1 py-100">
                                     <div class="content text-center gap-16">
-                                        <div aria-label="This cart is empty" aria-live="polite" class="text-size-medium">
+                                        <div aria-label="This cart is empty" aria-live="polite"
+                                             class="text-size-medium">
                                             Your cart is empty
                                         </div>
                                         <a class="button-link" href="#">
@@ -141,6 +154,81 @@
             <div class="container">
                 <div class="value-content flex-row-container">
                     <p class="text-size-small">fairtrade | organic | climate neutral</p>
+                </div>
+            </div>
+        </section>
+        <!--Section Promise-->
+        <section class="promise border-bottom bg-secondary">
+            <div class="container-large">
+                <!--Promise Grid-->
+                <div class="promise-grid grid grid-cols-2 border-left">
+                    <!--Column 1-->
+                    <div class="promise-card padding-lg space-y-32">
+                        <h2 class="h2">Our blends deliver on the promise of balance and consistency,
+                            ROASTED TO MAXIMIZE SWEETNESS</h2>
+                        <p class="text-regular">Our blends ensure balance, roasted to enhance sweetness. Crafted
+                            meticulously for exquisite flavor.</p>
+                        <a class="view-more-link" href="#">
+                            <div class="view-more-text">VIEW MORE</div>
+                            <img class="svg arrow-icon" src="./dist/assets/img/arrow.svg" alt="" loading="lazy">
+                        </a>
+                    </div>
+                    <!--Column 2-->
+                    <div class="product-collection">
+                        <div class="product-grid grid grid-cols-2 border-right" role="list">
+                            <!--Card Item-->
+                            <div class="product-item" role="listitem">
+                                <!--Add to cart Form-->
+                                <div class="add-to-cart">
+                                    <form class="add-to-cart-form" data-node-type="add-to-cart-form" data-loading-text="Adding to cart..." novalidate>
+                                        <button class="add-to-cart-button flex-row-container" type="submit" data-node-type="add-to-cart-button" data-loading-text="Adding...">Add to cart</button>
+                                        <a class="product-info-link" href="#">
+                                            <img class="svg arrow-icon" src="./dist/assets/img/arrow.svg" alt="" loading="lazy">
+                                        </a>
+                                    </form>
+                                </div>
+                                <a class="product-wrapper space-y-32" href="#">
+                                    <div class="product-img">
+                                        <img src="./dist/assets/img/product1.png" alt="" loading="lazy">
+                                    </div>
+                                    <div class="product-text-wrapper flex flex-col w-full">
+                                        <div class="product-name">Costa Rica</div>
+                                        <div class="product-price">$&nbsp;35.99&nbsp;USD</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Card Item-->
+                            <div class="product-item" role="listitem">
+                                <!--Add to cart Form-->
+                                <div class="add-to-cart">
+                                    <form class="add-to-cart-form" data-node-type="add-to-cart-form" data-loading-text="Adding to cart..." novalidate>
+                                        <button class="add-to-cart-button flex-row-container" type="submit" data-node-type="add-to-cart-button" data-loading-text="Adding...">Add to cart</button>
+                                        <a class="product-info-link" href="#">
+                                            <img class="svg arrow-icon" src="./dist/assets/img/arrow.svg" alt="" loading="lazy">
+                                        </a>
+                                    </form>
+                                </div>
+                                <a class="product-wrapper space-y-32" href="#">
+                                    <div class="product-img">
+                                        <img src="./dist/assets/img/product2.png" alt="" loading="lazy">
+                                    </div>
+                                    <div class="product-text-wrapper flex flex-col w-full">
+                                        <div class="product-name">Decaf Expresso</div>
+                                        <div class="product-price">$&nbsp;40.99&nbsp;USD</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Large Picture-->
+        <section class="large-picture relative padding-xlarge border-right border-left border-bottom">
+            <div class="container-large">
+                <div class="large-image-wrapper text-center flex-row-container mx-auto">
+                    <img class="large-image" sizes="(max-width: 479px) 99vw, 100vw" src="./dist/assets/img/section.webp" srcset="./dist/assets/img/section.webp" loading="lazy" alt="">
+                    <h2 class="large-picture-text">more than just a coffee shop</h2>
                 </div>
             </div>
         </section>

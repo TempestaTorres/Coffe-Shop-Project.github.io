@@ -22,8 +22,8 @@
     --text-size--small: 1rem;
     --alternate-color--arrow-bg: #fbed81;
     --section-padding--xlarge: 15.25rem;
+    --section-padding--size: 6.4rem;
     --heading: var(--font3);
-
 }
 
 body {

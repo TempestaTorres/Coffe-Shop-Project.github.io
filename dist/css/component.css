@@ -536,6 +536,9 @@ input:valid:required, textarea:valid:required {
     box-shadow: var(--c-box-shadow);
 }
 /*========== Line width ================*/
+.line-length-lg {
+    max-width: 80ch;
+}
 .line-length-md {
     max-width: 50ch;
 }
@@ -1317,7 +1320,12 @@ input:valid:required, textarea:valid:required {
 }
 /* Padding */
 .spacer-large {
+    width: 100%;
     padding-top: 3rem;
+}
+.spacer-medium {
+    width: 100%;
+    padding-top: 2rem;
 }
 .padding-tiny {
     padding: var(--c-padding--tiny);

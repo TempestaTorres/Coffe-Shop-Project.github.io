@@ -152,7 +152,7 @@ a {
 .product-price {
     font-family: var(--third-family), sans-serif;
 }
-.footer_heading {
+.footer-heading {
     margin-bottom: .5rem;
     font-size: 1.875rem;
     font-weight: 400;

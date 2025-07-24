@@ -695,6 +695,11 @@ input:valid:required, textarea:valid:required {
     align-items: center;
     justify-content: center;
 }
+.flex-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .flex-column-container {
     display: flex;
     flex-direction: column;

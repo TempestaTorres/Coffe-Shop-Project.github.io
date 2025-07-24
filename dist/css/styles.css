@@ -110,6 +110,32 @@ img.testimonial-image {
 .w-accordion-header.amsterdam:hover {
     background-color: #dedede;
 }
+/*Quality*/
+.quality-grid {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto;
+}
+.quality-left-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: var(--c-padding--large) var(--c-padding--large) var(--c-padding--xlarge);
+}
+img.quality-img {
+    width: 19.75rem;
+}
+.quality-right-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+.post-text {
+    max-width: 25rem;
+}
 
 @media screen and (max-width: 767px) {
 

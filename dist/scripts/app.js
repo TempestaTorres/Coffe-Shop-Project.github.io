@@ -6,4 +6,5 @@ document.addEventListener("DOMContentLoaded", () => {
     componentNavigation();
     observeProducts();
     wsliderInit(4000, 1000, true, false);
+    accordionInit();
 });

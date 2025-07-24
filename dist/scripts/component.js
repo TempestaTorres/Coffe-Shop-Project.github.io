@@ -409,3 +409,47 @@ function _wsAutoPlay() {
 
     }, delay);
 }
+function accordionInit() {
+
+    "use strict";
+
+    let accordion = document.querySelector('.w-accordion');
+
+    if (accordion) {
+
+        for (let i = 0; i < accordion.children.length; ++i) {
+
+            let row = accordion.children[i];
+            row.firstElementChild.addEventListener('click', _waccordionClick);
+        }
+    }
+}
+function _waccordionClick(e) {
+    "use strict";
+
+    e.preventDefault();
+
+    let wrapper = e.currentTarget.nextElementSibling;
+
+    if (!wrapper.classList.contains('is-active')) {
+
+        let parentNode = wrapper.parentElement.parentElement;
+
+        _waccordionToggleActive(parentNode);
+
+        wrapper.classList.add('is-active');
+    }
+}
+function _waccordionToggleActive(accordion) {
+    "use strict";
+
+    for (let i = 0; i < accordion.children.length; ++i) {
+
+        let row = accordion.children[i];
+
+        if (row.lastElementChild.classList.contains('is-active')) {
+
+            row.lastElementChild.classList.remove('is-active');
+        }
+    }
+}

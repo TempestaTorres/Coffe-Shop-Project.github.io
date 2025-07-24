@@ -136,6 +136,14 @@ img.quality-img {
 .post-text {
     max-width: 25rem;
 }
+.team-grid {
+    display: grid;
+    grid-template: "Area Area Area Area Area Area"". . . . . ."/1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+}
+.team-heading-wrapper {
+    grid-area: span 1/span 6/span 1/span 6;
+}
 
 @media screen and (max-width: 767px) {
 

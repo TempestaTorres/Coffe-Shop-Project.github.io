@@ -22,6 +22,7 @@
     --text-size--small: 1rem;
     --alternate-color--arrow-bg: #fbed81;
     --section-padding--xlarge: 15.25rem;
+    --section-padding--medium: 8.5rem;
     --section-padding--size: 6.4rem;
     --heading: var(--font3);
 }
@@ -99,6 +100,9 @@ a {
 .padding-xlarge {
     padding-top: var(--section-padding--xlarge);
     padding-bottom: var(--section-padding--xlarge);
+}
+.section-padding-medium {
+    padding: var(--section-padding--medium);
 }
 .large-picture-text {
     color: var(--text-color--text-secondary);

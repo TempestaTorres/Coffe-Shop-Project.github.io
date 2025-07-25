@@ -171,7 +171,7 @@ img.career-img {
 .career-text-wrapper {
     max-width: 407px;
 }
-.partners-grid {
+.partners-grid, .follow-grid {
     display: grid;
     grid-template: "Area Area Area Area Area"". . . . ."/1fr 1fr 1fr 1fr 1fr;
     grid-auto-columns: .25fr;
@@ -179,10 +179,23 @@ img.career-img {
 .partners-heading-wrapper {
     grid-area: span 1/span 5/span 1/span 5;
 }
-
-
-
-
+.cafe-left-side {
+    padding: var(--section-padding--size);
+}
+.cafe-text-heading {
+    display: flex;
+    align-items: end;
+}
+img.cafe-img {
+    height: 100%;
+}
+.follow-grid {
+    gap: 2rem;
+}
+img.follow-image {
+    border-radius: 10px;
+    height: 100%;
+}
 
 
 @media screen and (max-width: 767px) {

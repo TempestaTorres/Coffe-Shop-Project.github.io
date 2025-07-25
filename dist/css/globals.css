@@ -165,6 +165,10 @@ a {
     font-size: 1.875rem;
     font-weight: 400;
 }
+.padding-global {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+}
 .underline {
     width: 3rem;
     position: absolute;

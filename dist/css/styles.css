@@ -196,7 +196,9 @@ img.follow-image {
     border-radius: 10px;
     height: 100%;
 }
-
+.footer-logo-link {
+    width: 6.5rem;
+}
 
 @media screen and (max-width: 767px) {
 

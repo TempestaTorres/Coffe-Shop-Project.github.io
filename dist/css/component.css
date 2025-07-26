@@ -2070,8 +2070,8 @@ input:valid:required, textarea:valid:required {
     display: block;
     position: relative;
     width: 100%;
-    left: 0;
-    right: 0;
+    /*left: 0;*/
+    /*right: 0;*/
     height: 100%;
     overflow: hidden;
     z-index: 1;
@@ -2174,6 +2174,7 @@ input:valid:required, textarea:valid:required {
     :root {
         --c-max-width: 768px;
     }
+
 }
 /* 425 - 767 */
 @media screen and (max-width: 767px) {

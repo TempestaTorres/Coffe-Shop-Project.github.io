@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     "use strict";
 
-    initLenisScrooling();
+    //initLenisScrooling();
     openDialog();
     componentNavigation();
     observeProducts();

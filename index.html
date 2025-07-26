@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Early Birds</title>
     <link rel="stylesheet" href="./dist/css/styles.css">
-    <link rel="stylesheet" href="./dist/css/lenis.css">
+<!--    <link rel="stylesheet" href="./dist/css/lenis.css">-->
     <script src="./dist/scripts/localstorage.js"></script>
-    <script src="./dist/scripts/lenis.min.js"></script>
-    <script src="./dist/scripts/lenisinit.js"></script>
+<!--    <script src="./dist/scripts/lenis.min.js"></script>-->
+<!--    <script src="./dist/scripts/lenisinit.js"></script>-->
     <script src="./dist/scripts/dialog.js"></script>
     <script src="./dist/scripts/products.js"></script>
     <script src="./dist/scripts/component.js"></script>
@@ -131,8 +131,8 @@
         <div class="container-large">
             <div class="hero-grid grid grid-cols-2 w-full vh-80 overflow-hidden">
                 <!--Hero-img-->
-                <div class="hero-img-wrapper">
-                    <img class="hero-img" src="./dist/assets/img/hero-img.png" alt="main image" loading="lazy">
+                <div class="hero-img-wrapper wh-full grid-aria-full">
+                    <img class="hero-img" src="./dist/assets/img/hero-img.webp" alt="main image" loading="lazy">
                 </div>
                 <!--Hero Text-->
                 <div class="hero-text flex flex-col justify-center wh-full">
@@ -219,7 +219,7 @@
                                         </a>
                                     </form>
                                 </div>
-                                <a class="product-wrapper space-y-32" href="#">
+                                <a class="product-wrapper noborder space-y-32" href="#">
                                     <div class="product-img">
                                         <img src="./dist/assets/img/product2.png" alt="" loading="lazy">
                                     </div>
@@ -252,7 +252,7 @@
                     <!--Slider Column-->
                     <div class="testimonial-slider-wrapper grid-aria-full self-center">
                         <!--W-Slider-->
-                        <div class="testimonial-slider-wrapper w-slider">
+                        <div class="testimonial-slider w-slider">
                             <!--Slider frame-->
                             <div class="w-slider-frame">
                                 <!--Slide Item-->
@@ -469,7 +469,7 @@
                     <!--Right column-->
                     <div class="quality-right-column">
                         <!--Row 1-->
-                        <div class="flex-row grid-aria-full padding-lg border-bottom">
+                        <div class="quality-text-wrapper flex-row grid-aria-full padding-lg border-bottom">
                             <div class="post-text space-y-8">
                                 <h3 class="h3">Delivery</h3>
                                 <p class="text-regular">Vivamus hendrerit at sapien nec mattis. Quisque quis arcu</p>
@@ -480,7 +480,7 @@
                             </a>
                         </div>
                         <!--Row 2-->
-                        <div class="flex-row grid-aria-full padding-lg border-bottom">
+                        <div class="quality-text-wrapper flex-row grid-aria-full padding-lg border-bottom">
                             <div class="post-text space-y-8">
                                 <h3 class="h3">Wholesale</h3>
                                 <p class="text-regular">Pellentesque in tempor lorem, vel porttitor est.</p>
@@ -491,7 +491,7 @@
                             </a>
                         </div>
                         <!--Row 3-->
-                        <div class="flex-row grid-aria-full padding-lg border-bottom">
+                        <div class="quality-text-wrapper flex-row grid-aria-full padding-lg border-bottom">
                             <div class="post-text space-y-8">
                                 <h3 class="h3">Consistency</h3>
                                 <p class="text-regular">Aliquam ut arcu sodales, gravida quam vitae.</p>
@@ -502,7 +502,7 @@
                             </a>
                         </div>
                         <!--Row 4-->
-                        <div class="flex-row grid-aria-full padding-lg">
+                        <div class="quality-text-wrapper flex-row grid-aria-full padding-lg">
                             <div class="post-text space-y-8">
                                 <h3 class="h3">Quality</h3>
                                 <p class="text-regular">Nam at sapien ligula. Morbi maximus scelerisque mi sed.</p>
@@ -837,7 +837,8 @@
                         <h3 class="footer-heading">Early Birds</h3>
                         <div class="text-regular">Weteringstraat 48,1017 SP</div>
                         <div class="text-regular">Amsterdam</div>
-                        <a href="#" class="text-regular">Tel: 020-7718364</a>
+                        <a href="#" class="footer-info-link text-regular">
+                            <div>Tel: 020-7718364</div></a>
                     </div>
                 </div>
                 <!--Right Column-->

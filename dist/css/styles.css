@@ -205,9 +205,18 @@ img.follow-image {
 .footer-logo-link {
     width: 6.5rem;
 }
+/*Page Shop*/
+.shop-product-grid {
+    display: grid;
+    grid-template: ".""."/1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+}
+.no-border {
+    border-bottom-style: none;
+}
 
+/*===================================== Responsive =======================================*/
 @media screen and (max-width: 1199px) {
-
 
     .hero-text {
         padding-left: 6.25rem;

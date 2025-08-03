@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
     viewMoreLinks.forEach(viewMoreLink => {
 
         viewMoreLink.addEventListener("click", (e) => {
-            e.preventDefault();
+            if (e.currentTarget.ariaLabel !== "go-to-blog-post") {
+                e.preventDefault();
+            }
 
         });
     });

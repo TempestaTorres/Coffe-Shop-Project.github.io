@@ -204,6 +204,9 @@ a {
 .border-bottom {
     border-bottom: 2px solid var(--c-border-color--border-primary);
 }
+.border-top {
+    border-top: 2px solid var(--c-border-color--border-primary);
+}
 .border-left {
     border-left: 2px solid var(--c-border-color--border-primary);
 }

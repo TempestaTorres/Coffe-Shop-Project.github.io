@@ -2,19 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="page-title">Early Birds</title>
-    <link rel="stylesheet"
-          href="./dist/css/styles.css">
+    <link rel="stylesheet" href="./dist/css/styles.css">
     <!--    <link rel="stylesheet" href="./dist/css/lenis.css">-->
-    <script src="./dist/scripts/localstorage.js"></script>
     <!--    <script src="./dist/scripts/lenis.min.js"></script>-->
     <!--    <script src="./dist/scripts/lenisinit.js"></script>-->
-    <script src="./dist/scripts/dialog.js"></script>
-    <script src="./dist/scripts/products.js"></script>
-    <script src="./dist/scripts/component.js"></script>
-    <script src="dist/scripts/index.js"></script>
+    <script>
+        /*to prevent Firefox FOUC, this must be here*/
+        let FF_FOUC_FIX;
+    </script>
+    <script type="module" src="dist/scripts/home.js"></script>
 </head>
 <body>
 <div class="app-container">

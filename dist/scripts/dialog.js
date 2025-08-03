@@ -1,4 +1,6 @@
-class addProductEvent extends Event {
+import {addToLocalStorage, getFromLocalStorage} from "./localstorage.js";
+
+export class addProductEvent extends Event {
     #product;
 
     constructor(item) {
@@ -12,7 +14,7 @@ class addProductEvent extends Event {
 }
 
 
-function openDialog() {
+export function openDialog() {
 
     'use strict';
 

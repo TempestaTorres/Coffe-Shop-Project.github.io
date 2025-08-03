@@ -73,7 +73,7 @@ function getTopOffset() {
     return rect.top + window.pageYOffset - document.documentElement.clientTop;
 }
 // Navigation
-function componentNavigation() {
+export function componentNavigation() {
     "use strict";
 
     const navOpenContainer = document.querySelector('.nav-mobile-open-container');
@@ -92,7 +92,7 @@ function componentNavigation() {
 }
 // W-Slider
 
-function wsliderInit(delay, duration, loop, bButtons) {
+export function wsliderInit(delay, duration, loop, bButtons) {
 
     "use strict";
 
@@ -409,7 +409,7 @@ function _wsAutoPlay() {
 
     }, delay);
 }
-function accordionInit() {
+export function accordionInit() {
 
     "use strict";
 

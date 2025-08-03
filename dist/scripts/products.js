@@ -1,4 +1,6 @@
-function observeProducts() {
+import {addProductEvent} from "./dialog.js";
+
+export function observeProducts() {
     'use strict';
 
     const addToCartForms = document.querySelectorAll('.add-to-cart-form');
@@ -49,5 +51,4 @@ function productInfoClick(e) {
     'use strict';
     e.preventDefault();
 
-    console.log('product info link click');
 }

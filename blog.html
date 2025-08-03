@@ -6,13 +6,13 @@
     <title id="page-title">Blog</title>
     <link rel="stylesheet" href="./dist/css/styles.css">
     <!--    <link rel="stylesheet" href="./dist/css/lenis.css">-->
-    <script src="./dist/scripts/localstorage.js"></script>
     <!--    <script src="./dist/scripts/lenis.min.js"></script>-->
     <!--    <script src="./dist/scripts/lenisinit.js"></script>-->
-    <script src="./dist/scripts/dialog.js"></script>
-    <script src="./dist/scripts/products.js"></script>
-    <script src="./dist/scripts/component.js"></script>
-    <script src="./dist/scripts/blog.js"></script>
+    <script>
+        /*to prevent Firefox FOUC, this must be here*/
+        let FF_FOUC_FIX;
+    </script>
+    <script type="module" src="dist/scripts/common.js"></script>
 </head>
 <body>
     <div class="app-container">

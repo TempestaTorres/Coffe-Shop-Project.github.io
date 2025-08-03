@@ -1,4 +1,4 @@
-function getFromLocalStorage(itemName) {
+export function getFromLocalStorage(itemName) {
 
     let arr = [];
 
@@ -10,7 +10,7 @@ function getFromLocalStorage(itemName) {
 
     return arr;
 }
-function addToLocalStorage(itemName, items) {
+export function addToLocalStorage(itemName, items) {
 
     localStorage.setItem(itemName, JSON.stringify(items));
 }

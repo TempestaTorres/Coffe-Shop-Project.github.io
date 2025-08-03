@@ -1,10 +1,8 @@
 :root {
   --c-max-width: 1200px;
   --c-max-width-lg: 1920px;
-  --c-family-primary: Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu,
-    Helvetica Neue, Helvetica, Arial, sans-serif;
-  --c-family-code: Inconsolata, Hack, SF Mono, Roboto Mono, Source Code Pro,
-    Ubuntu Mono, monospace;
+  --c-family-primary: Inter, SF Pro, Segoe UI, Roboto, Oxygen, Ubuntu, Helvetica Neue, Helvetica, Arial, sans-serif;
+  --c-family-code: Inconsolata, Hack, SF Mono, Roboto Mono, Source Code Pro, Ubuntu Mono, monospace;
   --c-size-small: 0.75rem;
   --c-size-normal: 1rem;
   --c-size-medium: 1.25rem;
@@ -33,13 +31,11 @@
   --c-shadow-h: 221deg;
   --c-shadow-s: 14%;
   --c-shadow-l: 4%;
-  --c-shadow: 0 0.5em 1em -0.125em hsla(var(--c-shadow-h), var(--c-shadow-s), var(--c-shadow-l), 0.1),
-    0 0px 0 1px
+  --c-shadow: 0 0.5em 1em -0.125em hsla(var(--c-shadow-h), var(--c-shadow-s), var(--c-shadow-l), 0.1), 0 0px 0 1px
       hsla(var(--c-shadow-h), var(--c-shadow-s), var(--c-shadow-l), 0.02);
   --c-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   --c-text-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-  --c-card-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --c-card-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   --c-black-rgb: 8.772, 9.6764, 11.628;
   --c-black-h: 221deg;
   --c-black-s: 14%;
@@ -47,18 +43,9 @@
   --c-black-invert-l: 100%;
   --c-black-invert: hsl(221, 14%, 100%);
   --c-black-on-scheme-l: 4%;
-  --c-black-on-scheme: hsla(
-    var(--c-black-h),
-    var(--c-black-s),
-    var(--c-black-on-scheme-l),
-    1
+  --c-black-on-scheme: hsla(var(--c-black-h), var(--c-black-s), var(--c-black-on-scheme-l), 1
   );
-  --c-primary-base: hsla(
-    var(--c-primary-h),
-    var(--c-primary-s),
-    var(--c-primary-l),
-    1
-  );
+  --c-primary-base: hsla(var(--c-primary-h), var(--c-primary-s), var(--c-primary-l), 1);
   --c-primary-rgb: 0, 209.1, 177.735;
   --c-primary-h: 171deg;
   --c-primary-s: 100%;

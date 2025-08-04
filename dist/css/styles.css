@@ -257,6 +257,59 @@ img.blog-page-shop-image {
 .blog-page-list li {
     margin-bottom: .25rem;
 }
+.product-details-image-wrapper {
+    top: 5rem;
+    padding: 4rem 2.5rem 2.5rem;
+}
+img.product-details-image {
+    height: 18rem;
+    width: auto;
+}
+.product-details-description {
+    font-size: 1rem;
+}
+.product-details-box-counter {
+    border: 1px solid var(--c-border-color--border-primary);
+    background-color: #fafafa;
+    height: 2.6rem;
+    width: 3.75rem;
+    padding: 8px 6px 8px 12px;
+    line-height: 1.25rem;
+}
+.product-details-button {
+    border: 1px solid var(--c-border-color--border-primary);
+}
+.v-accordion-wrapper {
+    border-top: 1px solid var(--c-border-color--border-primary);
+}
+.v-accordion-item {
+    border-bottom: 1px solid var(--c-border-color--border-primary);
+    height: 42px;
+}
+.v-accordion-item-header {
+    height: 42px;
+    border-style: none solid solid;
+    border-width: 1px;
+    border-color: var(--c-border-color--border-primary);
+    font-family: var(--third-family), sans-serif;
+}
+.v-accordion-item-body {
+    gap: .5rem;
+    border-top: 1px none var(--c-border-color--border-primary);
+    border-right: 1px solid var(--c-border-color--border-primary);
+    border-left: 1px solid var(--c-border-color--border-primary);
+    padding: .5rem 1rem;
+}
+.accordion-details-text-wrapper, .accordion-shipping-text-wrapper {
+    font-family: var(--third-family), sans-serif;
+}
+.accordion-text {
+    font-size: .9rem;
+    font-weight: 400;
+}
+.accordion-shipping-text-wrapper {
+    gap: .3rem;
+}
 
 /*===================================== Responsive =======================================*/
 @media screen and (max-width: 1199px) {

@@ -513,7 +513,7 @@ textarea:valid:required {
   display: flex;
   align-items: center;
 }
-/*============== Accordion =============*/
+/*============== Horizontal Accordion =============*/
 .w-accordion {
   display: flex;
   justify-content: center;
@@ -553,7 +553,42 @@ textarea:valid:required {
 .w-accordion-item-body.last {
   flex: 0 auto;
 }
-/*============ Loader ==================*/
+/*===================== Vertical Accordion =================*/
+.v-accordion-wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+.v-accordion-item {
+  display: inline-block;
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  transition: all 0.3s linear;
+  will-change: height;
+}
+.v-accordion-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.v-accordion-item-body {
+  display: flex;
+  flex-flow: column;
+}
+img.v-accordion-icon {
+  width: 15px;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(135deg) skew(0deg);
+  transform-style: preserve-3d;
+  transition: transform .3s ease;
+}
+img.v-accordion-icon.is-open {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+}
+/*=========================== Loader =======================*/
 .loader {
   content: '';
   display: block;

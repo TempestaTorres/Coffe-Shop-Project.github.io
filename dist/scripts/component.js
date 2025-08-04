@@ -453,3 +453,38 @@ function _waccordionToggleActive(accordion) {
         }
     }
 }
+// Vertical Accordion
+export function vaccordionInit() {
+    "use strict";
+    let wrapper = document.querySelector('.v-accordion-wrapper');
+    let headerHeight = 0;
+    let bodyHeight = 0;
+
+    if (wrapper) {
+
+        headerHeight = wrapper.children[0].offsetHeight;
+
+        for (let i = 0; i < wrapper.children.length; ++i) {
+
+            let row = wrapper.children[i];
+            bodyHeight = wrapper.children[i].lastElementChild.offsetHeight;
+            row.dataset.nodeHeight = bodyHeight + headerHeight + "px";
+
+            row.firstElementChild.addEventListener('click', _vaccordionClick);
+        }
+    }
+
+    function _vaccordionClick(e) {
+
+        let currentHeight = e.currentTarget.parentElement.offsetHeight;
+
+        if (currentHeight > headerHeight) {
+            e.currentTarget.parentElement.style.height = headerHeight + "px";
+        }
+        else {
+            e.currentTarget.parentElement.style.height = e.currentTarget.parentElement.dataset.nodeHeight;
+        }
+        // Button close svg image
+        e.currentTarget.lastElementChild.classList.toggle('is-open');
+    }
+}

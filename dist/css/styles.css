@@ -258,6 +258,7 @@ img.blog-page-shop-image {
     margin-bottom: .25rem;
 }
 .product-details-image-wrapper {
+    position: sticky;
     top: 5rem;
     padding: 4rem 2.5rem 2.5rem;
 }

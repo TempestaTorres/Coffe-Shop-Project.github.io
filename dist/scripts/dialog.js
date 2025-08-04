@@ -186,6 +186,8 @@ export function openDialog() {
         input.name = "quantity";
         input.autocomplete = "off";
         input.id = "quantity";
+        input.min = "1";
+        input.max = "100";
         input.value = `${product.count}`;
 
         cartItemInfo.appendChild(input);

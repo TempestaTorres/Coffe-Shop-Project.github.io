@@ -558,12 +558,13 @@ textarea:valid:required {
   display: flex;
   flex-flow: column;
   justify-content: space-around;
+  border-top: 1px solid var(--c-border-color--border-primary);
 }
 .v-accordion-item {
   display: inline-block;
-  cursor: pointer;
   width: 100%;
   overflow: hidden;
+  border-bottom: 1px solid var(--c-border-color--border-primary);
   transition: all 0.3s linear;
   will-change: height;
 }
@@ -574,10 +575,19 @@ textarea:valid:required {
   width: 100%;
   padding-left: 1rem;
   padding-right: 1rem;
+  border-style: none solid solid;
+  border-width: 1px;
+  border-color: var(--c-border-color--border-primary);
+  cursor: pointer;
 }
 .v-accordion-item-body {
   display: flex;
   flex-flow: column;
+  gap: .5rem;
+  border-top: 1px none var(--c-border-color--border-primary);
+  border-right: 1px solid var(--c-border-color--border-primary);
+  border-left: 1px solid var(--c-border-color--border-primary);
+  padding: .5rem 1rem;
 }
 img.v-accordion-icon {
   width: 15px;

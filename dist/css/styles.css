@@ -464,6 +464,12 @@ img.product-details-image {
     .blog-page-shop-wrapper {
         width: 50%;
     }
+    .product-details-text-wrapper {
+        padding: var(--c-padding--tiny);
+    }
+    .product-collection-wrapper .shop-product-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 @media screen and (max-width: 767px) {
 
@@ -725,6 +731,12 @@ img.product-details-image {
     .blog-page-shop {
         border-bottom-style: none;
         position: static;
+    }
+    .product-details-grid {
+        grid-template-columns: 1fr;
+    }
+    .product-collection-wrapper .shop-product-grid {
+        grid-template-columns: 1fr;
     }
 }
 @media screen and (max-width: 424px) {

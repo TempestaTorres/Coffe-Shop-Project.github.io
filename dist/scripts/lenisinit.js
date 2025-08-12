@@ -11,7 +11,7 @@ let lenis = new Lenis({
     autoRaf: true,
 });
 
-function initLenisScrooling() {
+function initLenisScrolling() {
     'use strict';
 
     /*

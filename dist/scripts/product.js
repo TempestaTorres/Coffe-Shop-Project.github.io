@@ -1,25 +1,13 @@
-import {Base} from "./base.js";
+
 import {vaccordionInit} from "./component.js";
+import {observeProducts} from "./products.js";
 
 
-export class Product extends Base {
+export class Product {
     constructor() {
-        super();
+        observeProducts();
     }
     Init() {
         vaccordionInit();
     }
 }
-
-(function () {
-
-    "use strict";
-
-    document.addEventListener("DOMContentLoaded", () => {
-
-        //initLenisScrooling();
-        const product = new Product();
-        product.Init();
-    });
-
-})();

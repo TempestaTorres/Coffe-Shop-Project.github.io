@@ -1,10 +1,11 @@
-import {Base} from "./base.js";
+
 import {wsliderInit} from "./component.js";
 import {accordionInit} from "./component.js";
+import {observeProducts} from "./products.js";
 
-export class Home extends Base {
+export class Home {
     constructor() {
-        super();
+        observeProducts();
     }
     Init() {
         wsliderInit(3000, 1000, true, false);
@@ -15,7 +16,6 @@ export class Home extends Base {
         if (viewMoreLinks) {
 
             viewMoreLinks.forEach(viewMoreLink => {
-
                 viewMoreLink.addEventListener("click", (e) => {
                     if (e.currentTarget.ariaLabel !== "go-to-blog-post") {
                         e.preventDefault();
@@ -25,15 +25,3 @@ export class Home extends Base {
         }
     }
 }
-(function () {
-
-    "use strict";
-
-    document.addEventListener("DOMContentLoaded", () => {
-
-        //initLenisScrooling();
-        const home = new Home();
-        home.Init();
-    });
-
-})();

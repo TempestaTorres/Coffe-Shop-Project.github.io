@@ -201,7 +201,7 @@ export function openDialog() {
         buttonRemove.role = "button";
 
         let closeImg = document.createElement('img');
-        closeImg.src = "./dist/assets/img/icons-close.svg";
+        closeImg.src = "assets/img/icons-close.svg";
         closeImg.alt = "";
         closeImg.loading = "lazy";
 

@@ -1,0 +1,162 @@
+
+@keyframes rot {
+    0% {transform: rotate(0deg);}
+    25% {transform: rotate(30deg);}
+    50% {transform: rotate(0deg);}
+    75% {transform: rotate(-30deg);}
+    100% {transform: rotate(0deg);}
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(2deg); }
+}
+
+/* Scroll animations */
+
+.effect-right {
+   transition: all .5s ease-out;
+   transform: translate3d(100%, 0, 0);
+   opacity: 0;
+}
+.effect-from-bottom {
+    --effect-translate-y: 2.5rem;
+    transition: all 0.5s ease-out;
+    transform: translate3d(0, var(--effect-translate-y), 0);
+    opacity: 0;
+}
+
+.effect-from-bottom.is-active {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+}
+/*Text effects*/
+
+/* Example:
+<h2 class="h2 has-bottom-line-effect has-fadein-to-right-effect-buddy" data-duration-start="0.5s" data-duration-step="0.2s"><span
+                            class="has-fadein-to-right-effect">P</span><span class="has-fadein-to-right-effect">o</span><span
+                            class="has-fadein-to-right-effect">r</span><span class="has-fadein-to-right-effect">t</span><span
+                            class="has-fadein-to-right-effect">f</span><span class="has-fadein-to-right-effect">o</span><span
+                            class="has-fadein-to-right-effect">l</span><span class="has-fadein-to-right-effect">i</span><span
+                            class="has-fadein-to-right-effect">o</span></h2>
+
+*/
+.has-bottom-line-effect {
+    display: inline-block;
+    position: relative;
+}
+.has-bottom-line-effect::after {
+    --lb-effect-line-color: #57a898; /* Change custom value */
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--lb-effect-line-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1s ease-in;
+}
+.has-bottom-line-effect.is-active::after {
+    transform: scaleX(1);
+}
+/* Text fade-in-to-right apply to span */
+.has-fadein-to-right-effect-buddy.is-visible .has-fadein-to-right-effect {
+    opacity: 1;
+    left: 0;
+}
+.has-fadein-to-right-effect {
+    position: relative;
+    left: -300px;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+    transition-delay: 0s;
+}
+/* Perspective Card Frame
+
+ <div class="transform-border">
+<img src="image.jpg">
+</div>
+ */
+.transform-border {
+    position: relative;
+    transform: perspective(3000px) rotateY(29deg);
+}
+.transform-border img {
+    display: block;
+    width: 100%;
+    box-shadow: -12px 11px 1px #f2f2f2;
+}
+.transform-border:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -22px;
+    top: 22px;
+    background: #2b7060;
+    z-index: -1;
+}
+
+/* Pulsing effect */
+@keyframes playShadow {
+
+    0% {
+        box-shadow: 0 0 0 0 rgba(241, 151, 27, 30%), 0 0 0 0 rgba(241, 151, 27, 20%);
+        transform: scale(1);
+    }
+    18% {
+        box-shadow: 0 0 0 0 rgba(241, 151, 27, 30%), 0 0 0 0 rgba(241, 151, 27, 20%);
+    }
+    35% {
+        transform: scale(1.08);
+    }
+    76% {
+        transform: scale(0.96);
+    }
+    100% {
+        box-shadow: 0 0 0 16px rgba(241, 151, 27, 0), 0 0 0 27px rgba(241, 151, 27, 0);
+        transform: scale(1);
+    }
+}
+/* Add Zoom Animation */
+.zoom-animate {
+    animation: animatezoom 0.6s;
+}/* Add Zoom-out Animation */
+.zoom-out-animate {
+    animation: animatezoomout 0.6s;
+}
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+@keyframes animatezoomout {
+    from {transform: scale(1)}
+    to {transform: scale(0)}
+}

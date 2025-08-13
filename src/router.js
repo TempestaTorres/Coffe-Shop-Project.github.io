@@ -1,6 +1,6 @@
-import {Home} from "../dist/scripts/home.js";
-import {Product} from "../dist/scripts/product.js";
-import {observeProducts} from "../dist/scripts/products.js";
+import {Home} from "./scripts/home.js";
+import {Product} from "./scripts/product.js";
+import {observeProducts} from "./scripts/products.js";
 
 export class Router {
     constructor() {
@@ -8,7 +8,7 @@ export class Router {
             {
                 route: "#/",
                 pageTitle: "Early Birds",
-                template: "../templates/index-template.html",
+                template: "./templates/index-template.html",
                 load: () => {
                     const home = new Home();
                     home.Init();
@@ -18,7 +18,7 @@ export class Router {
             {
                 route: "#/shop",
                 pageTitle: "Early Birds Shop",
-                template: "../templates/shop-template.html",
+                template: "./templates/shop-template.html",
                 load: () => {
                     observeProducts();
                     this.#scrollToTop();
@@ -27,7 +27,7 @@ export class Router {
             {
                 route: "#/blog",
                 pageTitle: "Early Birds Blog",
-                template: "../templates/blog-template.html",
+                template: "./templates/blog-template.html",
                 load: () => {
                     this.#scrollToTop();
                 }
@@ -35,7 +35,7 @@ export class Router {
             {
                 route: "#/costa-rica",
                 pageTitle: "Costa Rica",
-                template: "../templates/costa-rica-template.html",
+                template: "./templates/costa-rica-template.html",
                 load: () => {
                     const product = new Product();
                     product.Init();
@@ -45,7 +45,7 @@ export class Router {
             {
                 route: "#/decaf-expresso",
                 pageTitle: "Decaf Expresso",
-                template: "../templates/decaf-expresso-template.html",
+                template: "./templates/decaf-expresso-template.html",
                 load: () => {
                     const product = new Product();
                     product.Init();
@@ -55,7 +55,7 @@ export class Router {
             {
                 route: "#/french-roast",
                 pageTitle: "French Roast",
-                template: "../templates/french-roast-template.html",
+                template: "./templates/french-roast-template.html",
                 load: () => {
                     const product = new Product();
                     product.Init();
@@ -65,7 +65,7 @@ export class Router {
             {
                 route: "#/decaf-french-expresso",
                 pageTitle: "Decaf French Expresso",
-                template: "../templates/decaf-french-expresso-template.html",
+                template: "./templates/decaf-french-expresso-template.html",
                 load: () => {
                     const product = new Product();
                     product.Init();
@@ -75,7 +75,7 @@ export class Router {
             {
                 route: "#/midnight-mocha",
                 pageTitle: "Midnight Mocha",
-                template: "../templates/midnight-mocha-template.html",
+                template: "./templates/midnight-mocha-template.html",
                 load: () => {
                     const product = new Product();
                     product.Init();
@@ -85,7 +85,7 @@ export class Router {
             {
                 route: "#/sunrise-blend",
                 pageTitle: "Sunrise Blend",
-                template: "../templates/sunrise-blend-template.html",
+                template: "./templates/sunrise-blend-template.html",
                 load: () => {
                     const product = new Product();
                     product.Init();
@@ -95,7 +95,7 @@ export class Router {
             {
                 route: "#/alpine-arabica",
                 pageTitle: "Alpine Arabica",
-                template: "../templates/alpine-arabica-template.html",
+                template: "./templates/alpine-arabica-template.html",
                 load: () => {
                     const product = new Product();
                     product.Init();
@@ -105,7 +105,7 @@ export class Router {
             {
                 route: "#/mystic-mountain",
                 pageTitle: "Mystic Mountain",
-                template: "../templates/mystic-mountain-brew-template.html",
+                template: "./templates/mystic-mountain-brew-template.html",
                 load: () => {
                     const product = new Product();
                     product.Init();
@@ -115,7 +115,7 @@ export class Router {
             {
                 route: "#/make-sure-your-coffee-is-as-fresh-as-it-can-be",
                 pageTitle: "Early Birds Blog Post",
-                template: "../templates/make-sure-your-coffee-is-as-fresh-as-it-can-be-template.html",
+                template: "./templates/make-sure-your-coffee-is-as-fresh-as-it-can-be-template.html",
                 load: () => {
                     this.#scrollToTop();
                 }
@@ -123,7 +123,7 @@ export class Router {
             {
                 route: "#/the-best-coffee-advent-calendars-of-this-year",
                 pageTitle: "Early Birds Blog Post",
-                template: "../templates/the-best-coffee-advent-calendars-of-this-year-template.html",
+                template: "./templates/the-best-coffee-advent-calendars-of-this-year-template.html",
                 load: () => {
                     this.#scrollToTop();
                 }
@@ -131,7 +131,7 @@ export class Router {
             {
                 route: "#/the-most-common-way-people-drink-noir-cafe",
                 pageTitle: "Early Birds Blog Post",
-                template: "../templates/the-most-common-way-people-drink-noir-cafe-template.html",
+                template: "./templates/the-most-common-way-people-drink-noir-cafe-template.html",
                 load: () => {
                     this.#scrollToTop();
                 }
@@ -139,7 +139,7 @@ export class Router {
             {
                 route: "#/coffee-beans-prepared-in-four-different-ways",
                 pageTitle: "Early Birds Blog Post",
-                template: "../templates/coffee-beans-prepared-in-four-different-ways-template.html",
+                template: "./templates/coffee-beans-prepared-in-four-different-ways-template.html",
                 load: () => {
                     this.#scrollToTop();
                 }
@@ -147,7 +147,7 @@ export class Router {
             {
                 route: "#/the-baristan-kettle-is-a-beacon-for-preparation",
                 pageTitle: "Early Birds Blog Post",
-                template: "../templates/the-baristan-kettle-is-a-beacon-for-preparation-template.html",
+                template: "./templates/the-baristan-kettle-is-a-beacon-for-preparation-template.html",
                 load: () => {
                     this.#scrollToTop();
                 }
@@ -155,7 +155,7 @@ export class Router {
             {
                 route: "#/the-worlds-best-coffee-tours-brasil",
                 pageTitle: "Early Birds Blog Post",
-                template: "../templates/the-worlds-best-coffee-tours-brasil-columbia-template.html",
+                template: "./templates/the-worlds-best-coffee-tours-brasil-columbia-template.html",
                 load: () => {
                     this.#scrollToTop();
                 }
@@ -184,6 +184,5 @@ export class Router {
         } else {
             location.href = '#/';
         }
-
     }
 }

@@ -1,6 +1,6 @@
 import {Router} from './router.js';
-import {openDialog} from "../dist/scripts/dialog.js";
-import {componentNavigation} from "../dist/scripts/component.js";
+import {openDialog} from "./scripts/dialog.js";
+import {componentNavigation} from "./scripts/component.js";
 
 (function () {
 
@@ -9,7 +9,7 @@ import {componentNavigation} from "../dist/scripts/component.js";
     window.addEventListener('DOMContentLoaded', () => {
 
         "use strict";
-        //initLenisScrolling();
+        initLenisScrolling();
         routerHandler();
         openDialog();
         componentNavigation();

@@ -1,0 +1,326 @@
+
+@font-face {
+    font-family: 'SpaceMono-Regular';
+    src: url('../assets/fonts/SpaceMono-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Anton';
+    src: url('../assets/fonts/Anton-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root {
+    --third-family: "SpaceMono-Regular";
+    --font3: "Anton";
+    --text-size--medium: 1.5625rem;
+    --text-size--tiny: .875rem;
+    --text-size--regular: 1.125rem;
+    --text-color--text-secondary: white;
+    --text-size--small: 1rem;
+    --alternate-color--arrow-bg: #fbed81;
+    --section-padding--xlarge: 15.25rem;
+    --section-padding--medium: 8.5rem;
+    --section-padding--size: 6.4rem;
+    --heading: var(--font3);
+}
+
+body {
+    font-family: var(--heading), sans-serif;
+    color: var(--c-text-color--text-primary);
+    font-size: 1rem;
+    line-height: 1.5;
+    background-color: #fff;
+}
+a {
+    color: var(--c-text-color--text-primary);
+}
+.h1 {
+    font-size: 7.5rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.h2 {
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #000;
+}
+.h3 {
+    font-weight: 400;
+    font-size: 2.1875rem;
+    line-height: 1.2;
+}
+.h4 {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.h4-regular {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+.text-regular {
+    font-family: var(--third-family), sans-serif;
+    color: var(--c-text-color--text-primary);
+    font-size: var(--text-size--regular);
+}
+.elipses {
+    font-family: var(--third-family), sans-serif;
+    letter-spacing: -4px;
+}
+.text-size-large {
+    text-transform: uppercase;
+    font-size: 4.3rem;
+}
+.text-size-medium {
+    font-family: var(--third-family), sans-serif;
+    font-size: var(--text-size--medium);
+}
+.text-size-small {
+    font-family: var(--third-family), sans-serif;
+    font-size: var(--text-size--small);
+}
+.view-more-text {
+    font-size: var(--text-size--small);
+}
+.view-more-link {
+    width: 7rem;
+    gap: 7px;
+}
+.arrow-icon {
+    transform: translate3d(0%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+    transform-style: preserve-3d;
+    transition: transform .3s linear;
+}
+.view-more-link:hover .arrow-icon {
+    transform: translate3d(20%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+}
+.padding-xlarge {
+    padding-top: var(--section-padding--xlarge);
+    padding-bottom: var(--section-padding--xlarge);
+}
+.section-padding-medium {
+    padding: var(--section-padding--medium);
+}
+.large-picture-text {
+    color: var(--text-color--text-secondary);
+    text-transform: uppercase;
+    font-size: 6.25rem;
+}
+.testimonial-main-text {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+}
+.shop-details-heading {
+    font-size: var(--text-size--medium);
+    line-height: 1.2;
+    font-weight: 400;
+}
+.shop-detail-heading {
+    position: absolute;
+    inset: auto 0 1rem;
+    font-size: 2.7rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transform: rotate(-90deg);
+}
+.main-button {
+    justify-content: center;
+    width: 9rem;
+    padding-top: var(--c-padding--small);
+    padding-bottom: var(--c-padding--small);
+    background-color: var(--c-text-color--text-primary);
+    cursor: pointer;
+    background-image: url("../assets/img/main-button.svg");
+    background-position: 50%;
+    background-size: cover;
+}
+.button-text {
+    color: var(--text-color--text-secondary);
+    font-size: var(--text-size--small);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.product-name {
+    font-family: var(--heading), sans-serif;
+    font-size: var(--text-size--medium);
+}
+.product-price {
+    font-family: var(--third-family), sans-serif;
+}
+.footer-heading {
+    margin-bottom: .5rem;
+    font-size: 1.875rem;
+    font-weight: 400;
+}
+.padding-global {
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
+}
+.underline {
+    width: 3rem;
+    position: absolute;
+}
+.brand {
+    width: 11rem;
+}
+.cart-open-button {
+    background-color: #3898ec00;
+    padding: 9px 15px;
+}
+.cart-icon {
+    margin-right: 8px;
+}
+.cart-items-count {
+    display: inline-block;
+    line-height: 1.125rem;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 9px;
+    min-width: 1.125rem;
+    height: 1.125rem;
+}
+.button-link {
+    gap: .5rem;
+    border: 1px solid var(--c-border-color--border-primary);
+    background-color: var(--base-color--secondary);
+    padding: .3rem .5rem;
+}
+.button-link:hover {
+    background-color: #fae7c2;
+}
+.border-bottom {
+    border-bottom: 2px solid var(--c-border-color--border-primary);
+}
+.border-top {
+    border-top: 2px solid var(--c-border-color--border-primary);
+}
+.border-left {
+    border-left: 2px solid var(--c-border-color--border-primary);
+}
+.border-right {
+    border-right: 2px solid var(--c-border-color--border-primary);
+}
+.bg-secondary {
+    background-color: var(--base-color--secondary);
+}
+
+.bg-secondary-2 {
+    background-color: var(--base-color--secondary-2);
+}
+.bg-alternate {
+    background-color: var(--base-color--alternate);
+}
+
+.product-item {
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+    border-left: 2px solid var(--c-border-color--border-primary);
+    border-right: 2px none var(--c-border-color--border-primary);
+    width: 100%;
+    height: 100%;
+}
+.product-item.list-iem {
+    border-bottom: 2px solid var(--c-border-color--border-primary);
+}
+.product-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: var(--c-padding--large);
+    border-bottom: 2px solid var(--c-border-color--border-primary);
+}
+.out-of-stock {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #110d0dab;
+}
+.out-of-stock-text {
+    font-family: var(--third-family), sans-serif;
+    color: var(--base-color-neutral--white);
+    text-align: center;
+    font-weight: 400;
+}
+.add-to-cart-form {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    inset: 0 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-auto-columns: 1fr;
+    place-content: center space-around;
+    place-items: center;
+    border-bottom: 2px solid var(--c-border-color--border-primary);
+    background-color: var(--base-color--secondary);
+    transform: translate3d(0px, -101%, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+    transform-style: preserve-3d;
+    transition: transform .3s linear;
+}
+.add-to-cart-form ~ .out-of-stock, .add-to-cart-standard-form ~ .out-of-stock {
+    display: none;
+}
+.product-item:hover .add-to-cart-form {
+    transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+}
+.add-to-cart-form[data-stock="out of stock"], .add-to-cart-standard-form[data-stock="out of stock"] {
+    display: none;
+}
+.add-to-cart-form[data-stock="out of stock"] ~ .out-of-stock,
+.add-to-cart-standard-form[data-stock="out of stock"] ~ .out-of-stock {
+    display: flex;
+}
+.add-to-cart-button {
+    background-color: var(--base-color--secondary-2);
+    color: var(--c-text-color--text-primary);
+    font-family: var(--third-family), sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: .5rem 1rem;
+    transition: all .2s;
+}
+.add-to-cart-button:hover {
+    background-color: var(--base-color--secondary-3);
+}
+.product-info-link {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    gap: .5rem;
+    border-left: 1px solid var(--c-border-color--border-primary);
+    background-color: var(--base-color--secondary);
+    text-align: center;
+    padding: .5rem;
+}
+.product-info-link:hover {
+    background-color: var(--base-color--secondary-4);
+}
+.product-details-page-link, .product-details-page-title {
+    font-family: var(--third-family), sans-serif;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+}

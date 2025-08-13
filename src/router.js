@@ -8,9 +8,8 @@ export class Router {
             {
                 route: "#/",
                 pageTitle: "Early Birds",
-                template: "./templates/index-template.html",
+                template: "../templates/index-template.html",
                 load: () => {
-                    //initLenisScrooling();
                     const home = new Home();
                     home.Init();
                     this.#scrollToTop();
@@ -19,9 +18,8 @@ export class Router {
             {
                 route: "#/shop",
                 pageTitle: "Early Birds Shop",
-                template: "./templates/shop-template.html",
+                template: "../templates/shop-template.html",
                 load: () => {
-                    //initLenisScrooling();
                     observeProducts();
                     this.#scrollToTop();
                 }
@@ -29,18 +27,16 @@ export class Router {
             {
                 route: "#/blog",
                 pageTitle: "Early Birds Blog",
-                template: "./templates/blog-template.html",
+                template: "../templates/blog-template.html",
                 load: () => {
-                    //initLenisScrooling();
                     this.#scrollToTop();
                 }
             },
             {
                 route: "#/costa-rica",
                 pageTitle: "Costa Rica",
-                template: "./templates/costa-rica-template.html",
+                template: "../templates/costa-rica-template.html",
                 load: () => {
-                    //initLenisScrooling();
                     const product = new Product();
                     product.Init();
                     this.#scrollToTop();
@@ -49,9 +45,8 @@ export class Router {
             {
                 route: "#/decaf-expresso",
                 pageTitle: "Decaf Expresso",
-                template: "./templates/decaf-expresso-template.html",
+                template: "../templates/decaf-expresso-template.html",
                 load: () => {
-                    //initLenisScrooling();
                     const product = new Product();
                     product.Init();
                     this.#scrollToTop();
@@ -60,9 +55,8 @@ export class Router {
             {
                 route: "#/french-roast",
                 pageTitle: "French Roast",
-                template: "./templates/french-roast-template.html",
+                template: "../templates/french-roast-template.html",
                 load: () => {
-                    //initLenisScrooling();
                     const product = new Product();
                     product.Init();
                     this.#scrollToTop();
@@ -71,9 +65,8 @@ export class Router {
             {
                 route: "#/decaf-french-expresso",
                 pageTitle: "Decaf French Expresso",
-                template: "./templates/decaf-french-expresso-template.html",
+                template: "../templates/decaf-french-expresso-template.html",
                 load: () => {
-                    //initLenisScrooling();
                     const product = new Product();
                     product.Init();
                     this.#scrollToTop();
@@ -82,9 +75,8 @@ export class Router {
             {
                 route: "#/midnight-mocha",
                 pageTitle: "Midnight Mocha",
-                template: "./templates/midnight-mocha-template.html",
+                template: "../templates/midnight-mocha-template.html",
                 load: () => {
-                    //initLenisScrooling();
                     const product = new Product();
                     product.Init();
                     this.#scrollToTop();
@@ -93,9 +85,8 @@ export class Router {
             {
                 route: "#/sunrise-blend",
                 pageTitle: "Sunrise Blend",
-                template: "./templates/sunrise-blend-template.html",
+                template: "../templates/sunrise-blend-template.html",
                 load: () => {
-                    //initLenisScrooling();
                     const product = new Product();
                     product.Init();
                     this.#scrollToTop();
@@ -104,9 +95,8 @@ export class Router {
             {
                 route: "#/alpine-arabica",
                 pageTitle: "Alpine Arabica",
-                template: "./templates/alpine-arabica-template.html",
+                template: "../templates/alpine-arabica-template.html",
                 load: () => {
-                    //initLenisScrooling();
                     const product = new Product();
                     product.Init();
                     this.#scrollToTop();
@@ -115,9 +105,8 @@ export class Router {
             {
                 route: "#/mystic-mountain",
                 pageTitle: "Mystic Mountain",
-                template: "./templates/mystic-mountain-brew-template.html",
+                template: "../templates/mystic-mountain-brew-template.html",
                 load: () => {
-                    //initLenisScrooling();
                     const product = new Product();
                     product.Init();
                     this.#scrollToTop();
@@ -126,54 +115,48 @@ export class Router {
             {
                 route: "#/make-sure-your-coffee-is-as-fresh-as-it-can-be",
                 pageTitle: "Early Birds Blog Post",
-                template: "./templates/make-sure-your-coffee-is-as-fresh-as-it-can-be-template.html",
+                template: "../templates/make-sure-your-coffee-is-as-fresh-as-it-can-be-template.html",
                 load: () => {
-                    //initLenisScrooling();
                     this.#scrollToTop();
                 }
             },
             {
                 route: "#/the-best-coffee-advent-calendars-of-this-year",
                 pageTitle: "Early Birds Blog Post",
-                template: "./templates/the-best-coffee-advent-calendars-of-this-year-template.html",
+                template: "../templates/the-best-coffee-advent-calendars-of-this-year-template.html",
                 load: () => {
-                    //initLenisScrooling();
                     this.#scrollToTop();
                 }
             },
             {
                 route: "#/the-most-common-way-people-drink-noir-cafe",
                 pageTitle: "Early Birds Blog Post",
-                template: "./templates/the-most-common-way-people-drink-noir-cafe-template.html",
+                template: "../templates/the-most-common-way-people-drink-noir-cafe-template.html",
                 load: () => {
-                    //initLenisScrooling();
                     this.#scrollToTop();
                 }
             },
             {
                 route: "#/coffee-beans-prepared-in-four-different-ways",
                 pageTitle: "Early Birds Blog Post",
-                template: "./templates/coffee-beans-prepared-in-four-different-ways-template.html",
+                template: "../templates/coffee-beans-prepared-in-four-different-ways-template.html",
                 load: () => {
-                    //initLenisScrooling();
                     this.#scrollToTop();
                 }
             },
             {
                 route: "#/the-baristan-kettle-is-a-beacon-for-preparation",
                 pageTitle: "Early Birds Blog Post",
-                template: "./templates/the-baristan-kettle-is-a-beacon-for-preparation-template.html",
+                template: "../templates/the-baristan-kettle-is-a-beacon-for-preparation-template.html",
                 load: () => {
-                    //initLenisScrooling();
                     this.#scrollToTop();
                 }
             },
             {
                 route: "#/the-worlds-best-coffee-tours-brasil",
                 pageTitle: "Early Birds Blog Post",
-                template: "./templates/the-worlds-best-coffee-tours-brasil-columbia-template.html",
+                template: "../templates/the-worlds-best-coffee-tours-brasil-columbia-template.html",
                 load: () => {
-                    //initLenisScrooling();
                     this.#scrollToTop();
                 }
             }

@@ -9,7 +9,7 @@ import {componentNavigation} from "../dist/scripts/component.js";
     window.addEventListener('DOMContentLoaded', () => {
 
         "use strict";
-
+        //initLenisScrolling();
         routerHandler();
         openDialog();
         componentNavigation();

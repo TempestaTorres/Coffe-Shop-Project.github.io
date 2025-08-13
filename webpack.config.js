@@ -5,7 +5,10 @@ const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 module.exports = {
     mode: 'development',
-    entry: './src/app.js',
+    entry: {
+        main: './src/app.js',
+        vendor: './src/scripts/lenis.min.js',
+    },
     optimization: {
         minimizer: [
             new CssMinimizerPlugin(),
@@ -24,7 +27,7 @@ module.exports = {
         }),],
     output: {
         clean: true,
-        filename: 'main.js',
+        filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
 };

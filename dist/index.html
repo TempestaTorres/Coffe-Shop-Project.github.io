@@ -7,10 +7,12 @@
     <title id="page-title">Early Birds</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/lenis.css">
-
-    <script src="../src/scripts/lenis.min.js"></script>
-    <script src="../src/scripts/lenisinit.js"></script>
-<script defer src="main.js"></script></head>
+    <script>
+        /*to prevent Firefox FOUC, this must be here*/
+        let FF_FOUC_FIX;
+    </script>
+    <script src="scripts/lenis.min.js"></script>
+<script defer src="main.bundle.js"></script></head>
 <body>
 <div class="app-container">
     <!--Navigation-->

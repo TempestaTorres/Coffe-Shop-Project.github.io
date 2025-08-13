@@ -7,7 +7,6 @@ module.exports = {
     mode: 'development',
     entry: {
         main: './src/app.js',
-        vendor: './src/scripts/lenis.min.js',
     },
     optimization: {
         minimizer: [
@@ -22,12 +21,13 @@ module.exports = {
             patterns: [
                 { from: "templates", to: "templates" },
                 { from: "src/css", to: "css" },
-                { from: "src/assets", to: "assets" }
+                { from: "src/assets", to: "assets" },
+                { from: "src/scripts/lenis.min.js", to: "scripts/lenis.min.js" },
             ],
         }),],
     output: {
         clean: true,
-        filename: 'bundle.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
 };

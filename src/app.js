@@ -4,19 +4,20 @@ import {componentNavigation} from "./scripts/component.js";
 
 (function () {
 
-    let lenis = new Lenis({
-        lerp: 0.1,
-        wheelMultiplier: 0.7,
-        gestureOrientation: "vertical",
-        normalizeWheel: false,
-        smoothTouch: false,
-        autoRaf: true,
-    });
     const newRouter = new Router();
 
     window.addEventListener('DOMContentLoaded', () => {
 
         "use strict";
+
+        let lenis = new Lenis({
+            lerp: 0.1,
+            wheelMultiplier: 0.7,
+            gestureOrientation: "vertical",
+            normalizeWheel: false,
+            smoothTouch: false,
+            autoRaf: true,
+        });
 
         function raf(time) {
             lenis.raf(time)

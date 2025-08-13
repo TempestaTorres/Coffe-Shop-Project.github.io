@@ -24,7 +24,6 @@ import {componentNavigation} from "./scripts/component.js";
             requestAnimationFrame(raf);
         }
         requestAnimationFrame(raf);
-
         routerHandler();
         openDialog();
         componentNavigation();
